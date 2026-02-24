@@ -1,114 +1,317 @@
 <!DOCTYPE html>
 <html lang="en">
-  <div style="text-align:right; padding:15px;">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Salsabilla Saidah Portfolio</title>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  background: linear-gradient(135deg, #1f1f2e, #2b5876, #4e4376);
+  color: #333;
+}
+
+/* CONTAINER */
+
+.container {
+  max-width: 900px;
+  margin: 40px auto;
+  background: white;
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+  animation: fadeIn 1s ease;
+}
+
+@keyframes fadeIn {
+  from {opacity:0; transform:translateY(20px);}
+  to {opacity:1; transform:translateY(0);}
+}
+
+/* HEADER */
+
+header {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.profile-pic {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 5px solid #eee;
+  margin-bottom: 15px;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 28px;
+}
+
+header p {
+  color: #666;
+  margin-top: 5px;
+}
+
+/* SOCIAL ICONS */
+
+.social {
+  margin-top: 15px;
+}
+
+.social a {
+  color: white;
+  margin: 0 6px;
+  font-size: 20px;
+  background: #111;
+  padding: 10px;
+  border-radius: 50%;
+  display: inline-block;
+  transition: 0.3s;
+}
+
+.social a:hover {
+  background: #555;
+  transform: translateY(-3px);
+}
+
+/* LANGUAGE BUTTON */
+
+.lang-btn {
+  text-align: right;
+  margin-bottom: 15px;
+}
+
+button {
+  padding: 8px 14px;
+  border: none;
+  background: #111;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-left: 5px;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #444;
+}
+
+/* SECTION */
+
+h2 {
+  border-bottom: 2px solid #eee;
+  padding-bottom: 5px;
+  margin-top: 30px;
+}
+
+/* SKILLS */
+
+.skills {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 10px;
+}
+
+.skill-item {
+  background: #f4f6f8;
+  padding: 10px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: 0.3s;
+}
+
+.skill-item:hover {
+  transform: translateY(-3px);
+  background: #e9ecef;
+}
+
+/* VIDEO */
+
+.video-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 15px;
+}
+
+video {
+  width: 100%;
+  border-radius: 10px;
+}
+
+/* WHATSAPP BUTTON */
+
+.hire-btn {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.hire-btn a {
+  background: #25D366;
+  color: white;
+  padding: 12px 22px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.hire-btn a:hover {
+  background: #1ebe5d;
+}
+
+/* LANGUAGE */
+
+.lang { display:none; }
+.lang.active { display:block; }
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="lang-btn">
   <button onclick="switchLang('en')">EN</button>
   <button onclick="switchLang('id')">ID</button>
 </div>
+
+<!-- ENGLISH -->
 <div id="en" class="lang">
 
 <header>
+  <img src="profile.jpg" class="profile-pic">
   <h1>Salsabilla Saidah</h1>
   <p>Quality Control • Sales Retail • Live Host</p>
+
+  <div class="social">
+    <a href="https://wa.me/6282299235522" target="_blank"><i class="fab fa-whatsapp"></i></a>
+    <a href="https://instagram.com/belasyh_" target="_blank"><i class="fab fa-instagram"></i></a>
+    <a href="https://tiktok.com/@beellssyh" target="_blank"><i class="fab fa-tiktok"></i></a>
+    <a href="mailto:bellasalsabillas02@gmail.com"><i class="fa fa-envelope"></i></a>
+  </div>
+
 </header>
 
 <section>
   <h2>Professional Summary</h2>
   <p>
     Energetic and detail-oriented Quality Control and Retail Sales professional
-    with strong experience in daily sales reporting, inventory control,
+    with strong experience in sales reporting, inventory control,
     customer service, and live hosting for TikTok and Shopee.
-    Highly adaptable, target-driven, and able to work effectively under pressure.
   </p>
 </section>
 
 <section>
-  <h2>Core Responsibilities</h2>
-  <ul>
-    <li>Daily sales reporting for finance team</li>
-    <li>Product consultation and customer handling</li>
-    <li>Sales strategy and target achievement</li>
-    <li>Stock opname and inventory balancing</li>
-    <li>Incoming & outgoing goods control</li>
-    <li>Product display and visual merchandising</li>
-    <li>Live host for TikTok & Shopee</li>
-    <li>Trainer for new staff</li>
-    <li>Detailed eye examination for customers</li>
-  </ul>
-</section>
+  <h2>Core Skills</h2>
 
-<section>
-  <h2>Highlights</h2>
-  <ul>
-    <li>Advanced Microsoft Excel</li>
-    <li>Sales & negotiation skills</li>
-    <li>Customer complaint handling</li>
-    <li>Frontliner / Cashier</li>
-    <li>Stock balancing & sales reporting</li>
-    <li>Model / Talent for social media</li>
-  </ul>
+  <div class="skills">
+    <div class="skill-item"><i class="fa fa-chart-line"></i> Sales & Negotiation</div>
+    <div class="skill-item"><i class="fa fa-file-excel"></i> Microsoft Excel</div>
+    <div class="skill-item"><i class="fa fa-box"></i> Inventory Control</div>
+    <div class="skill-item"><i class="fa fa-users"></i> Customer Service</div>
+    <div class="skill-item"><i class="fa fa-video"></i> Live Hosting</div>
+    <div class="skill-item"><i class="fa fa-cash-register"></i> Cashier</div>
+  </div>
+
 </section>
 
 </div>
-<div id="id" class="lang" style="display:none;">
+
+<!-- INDONESIA -->
+<div id="id" class="lang">
 
 <header>
+  <img src="profile.jpg" class="profile-pic">
   <h1>Salsabilla Saidah</h1>
   <p>Quality Control • Sales Retail • Live Host</p>
+
+  <div class="social">
+    <a href="https://wa.me/6282299235522" target="_blank"><i class="fab fa-whatsapp"></i></a>
+    <a href="https://instagram.com/belasyh_" target="_blank"><i class="fab fa-instagram"></i></a>
+    <a href="https://tiktok.com/@beellssyh" target="_blank"><i class="fab fa-tiktok"></i></a>
+    <a href="mailto:bellasalsabillas02@gmail.com"><i class="fa fa-envelope"></i></a>
+  </div>
+
 </header>
 
 <section>
   <h2>Ringkasan Profesional</h2>
   <p>
     Pribadi yang enerjik dan teliti dengan pengalaman sebagai Quality Control
-    dan Sales Retail. Terbiasa membuat laporan penjualan harian, mengelola stok,
+    dan Sales Retail. Terbiasa membuat laporan penjualan, mengelola stok,
     melayani customer, serta menjadi host live TikTok dan Shopee.
-    Mampu bekerja dengan tim maupun di bawah tekanan.
   </p>
 </section>
 
 <section>
-  <h2>Tanggung Jawab Utama</h2>
-  <ul>
-    <li>Membuat laporan penjualan harian</li>
-    <li>Melayani dan menjelaskan produk kepada customer</li>
-    <li>Menyusun strategi penjualan</li>
-    <li>Melakukan stok opname</li>
-    <li>Mengontrol barang masuk dan keluar</li>
-    <li>Menyusun display produk</li>
-    <li>Host live TikTok & Shopee</li>
-    <li>Trainer karyawan baru</li>
-    <li>Pengecekan mata secara detail</li>
-  </ul>
-</section>
+  <h2>Keahlian</h2>
 
-<section>
-  <h2>Keunggulan</h2>
-  <ul>
-    <li>Mahir Microsoft Excel</li>
-    <li>Skill negosiasi dan penjualan</li>
-    <li>Menangani komplain customer</li>
-    <li>Frontliner / Kasir</li>
-    <li>Balancing stock & laporan penjualan</li>
-    <li>Model / Talent media sosial</li>
-  </ul>
+  <div class="skills">
+    <div class="skill-item"><i class="fa fa-chart-line"></i> Penjualan & Negosiasi</div>
+    <div class="skill-item"><i class="fa fa-file-excel"></i> Microsoft Excel</div>
+    <div class="skill-item"><i class="fa fa-box"></i> Kontrol Stok</div>
+    <div class="skill-item"><i class="fa fa-users"></i> Customer Service</div>
+    <div class="skill-item"><i class="fa fa-video"></i> Live Hosting</div>
+    <div class="skill-item"><i class="fa fa-cash-register"></i> Kasir</div>
+  </div>
+
 </section>
 
 </div>
+
 <section>
   <h2>Live Hosting & Product Showcase</h2>
 
-  <video controls width="300">
-    <source src="video1.mp4" type="video/mp4">
-  </video>
+  <div class="video-grid">
+    <video controls>
+      <source src="video1.mp4" type="video/mp4">
+    </video>
 
-  <video controls width="300">
-    <source src="video2.mp4" type="video/mp4">
-  </video>
+    <video controls>
+      <source src="video2.mp4" type="video/mp4">
+    </video>
+  </div>
+
 </section>
+
+<div class="hire-btn">
+  <a href="https://wa.me/6282299235522?text=Hello%20Salsabilla,%20I%20am%20interested%20in%20your%20services." target="_blank">
+    <i class="fab fa-whatsapp"></i> Hire Me / Contact WhatsApp
+  </a>
+</div>
+
+</div>
+
 <script>
+
+/* SWITCH LANGUAGE */
 function switchLang(lang) {
-  document.getElementById('en').style.display = 'none';
-  document.getElementById('id').style.display = 'none';
-  document.getElementById(lang).style.display = 'block';
+  document.getElementById('en').classList.remove('active');
+  document.getElementById('id').classList.remove('active');
+  document.getElementById(lang).classList.add('active');
 }
+
+/* AUTO DETECT LANGUAGE */
+const userLang = navigator.language || navigator.userLanguage;
+
+if (userLang.startsWith('id')) {
+  switchLang('id');
+} else {
+  switchLang('en');
+}
+
 </script>
+
+</body>
+</html>
